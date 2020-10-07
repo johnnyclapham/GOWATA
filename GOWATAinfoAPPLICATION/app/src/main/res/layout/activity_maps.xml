@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:map="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/map"-->
+<!--    android:name="com.google.android.gms.maps.SupportMapFragment"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".MapsActivity" />-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="629dp"
+        android:layout_below="@+id/text"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="-1dp"
+        tools:context="com.example.drawroutes.MapsActivity"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="248dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-138dp"
+        android:layout_marginEnd="-6dp"
+        android:src="@drawable/graphic80s" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="307dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="-1dp"
+        android:drawableTint="#00FF0000"
+        android:text="Tip: Hold a click to recenter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/show_traffic"
+        android:layout_width="116dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="14dp"
+        android:text="Traffic On" />
+
+    <Button
+        android:id="@+id/no_traffic"
+        android:layout_width="120dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/map"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toEndOf="@+id/show_traffic"
+        android:text="Traffic Off" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/map"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="52dp"
+        android:layout_toStartOf="@+id/show_stops"
+        android:layout_toEndOf="@+id/show_traffic"
+        android:text="stop info"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/show_stops"
+        android:layout_width="136dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/map"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toEndOf="@+id/no_traffic"
+        android:text="GOWATA info" />
+
+    <Button
+        android:id="@+id/key"
+        android:layout_width="116dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="268dp"
+        android:text="Show route" />
+
+
+</RelativeLayout>
